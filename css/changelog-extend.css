@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+/** タイトル */
+.ce_title {
+}
+/** リスト */
+ul.ce_changelog_list {
+	list-style: none;
+	padding: 0px;
+
+	/** 行 */
+	li.ce_row {
+		padding: 0px;
+		margin-bottom: 4px;
+		display: flex;
+
+		/** 行 - 日付 */
+		span.ce_row_date {
+			padding: 0px 1em 0px 0px;
+		}
+		/** 行 - NEW */
+		img.ce_row_new, span.ce_row_new  {
+			padding: 0px 0.3em 0px 0px;
+		}
+		span.ce_row_new {
+			font-weight: bold;
+			color: gold;
+			text-shadow: black 1px 1px 2px;
+		}
+		/** 行 - タイトル */
+		span.ce_row_title {
+			padding: 0px;
+		}
+	}
+}

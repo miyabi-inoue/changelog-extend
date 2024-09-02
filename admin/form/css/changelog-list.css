@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+/** テーブルヘッダー */
+th#hidden_cb {
+	width: 70px;
+	box-sizing: border-box;
+}
+th#date_time {
+	width: 150px;
+	box-sizing: border-box;
+}
+th#edit {
+	width: 80px;
+	box-sizing: border-box;
+}
+
+/** テーブル */
+td.hidden_cb {
+	text-align: center;
+}
+td.prefix>select, input, td.suffix>select, input {
+	box-sizing: border-box;
+	width: calc(100% - 22px);
+}
+td.prefix>span:hover, td.suffix>span:hover {
+	cursor: pointer;
+}
+td.prefix>*, td.suffix>* {
+	vertical-align: middle;
+}
+td.comment input {
+	width: 100%;
+}
+td.edit {
+	text-align: center;
+}
+
+/** 編集ダイアログ */
+select#prefix, input#prefix, select#suffix, input#suffix {
+	box-sizing: border-box;
+	width: calc(100% - 22px);
+}
+span#prefix_change:hover, span#suffix_change:hover {
+	cursor: pointer;
+}

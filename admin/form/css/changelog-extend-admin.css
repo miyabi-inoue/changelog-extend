@@ -1,0 +1,207 @@
+@CHARSET "UTF-8";
+
+/** 設定フォーム */
+.ml-ce-setting-tab-content {
+	border: 1px solid #c3c4c7;
+	border-top: none;
+	background-color: #f5f5f5;
+	padding: 15px 20px;
+	h4 {
+		margin-left : 10px;
+	}
+	dl {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		margin: 0px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	dl dt, dl dd {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	dl dt {
+		justify-content: end;
+		font-weight: bold;
+		width: 150px;
+	}
+	dl dd {
+		display: block;
+		width: calc(100% - 150px);
+	}
+	input[type="text"] {
+		width: 50%;
+	}
+	textarea {
+		width: 50%;
+		height: 300px;
+	}
+	.ml-ce-row-to-display {
+		width: 40px !important;
+	}
+	.ml-ce-days-to-display-as-new {
+		width: 40px !important;
+	}
+}
+
+/** 登録フォーム */
+dl.registerform dt, dl.registerform dd {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+dl.registerform dt {
+	margin-bottom: 5px;
+}
+
+dl.registerform dd {
+	margin-bottom: 10px;
+}
+
+dl.registerform dt span.required {
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 0.8em;
+	padding: 3px;
+	background: red;
+	color: white;
+	border-radius: 5px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+dl.registerform dd input {
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+dl.registerform dd select {
+	padding: 5px 29px 5px 10px;
+	box-sizing: border-box;
+}
+
+/** 編集ダイアログ */
+div.dialog {
+	display: none;
+	overflow-y: hidden;
+}
+
+div.dialog div#dialogbody {
+	overflow-y: auto;
+	max-height: 486px
+}
+
+div.dialog dl {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	box-sizing: border-box;
+}
+
+div.dialog dl dt, div.dialog dl dd {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0px;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+div.dialog dl dt {
+	background: #f5f5f5;
+	width: 180px;
+	border-right: 1px solid #ccc;
+}
+
+div.dialog dl dt span.required {
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 0.8em;
+	padding: 3px;
+	background: red;
+	color: white;
+	border-radius: 5px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+div.dialog dl dd {
+	background: #fff;
+	width: calc(100% - 180px);
+}
+
+div.dialog dl dd input[type='text'], div.dialog dl dd textarea {
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+div.dialog dl dd select {
+	padding: 5px 29px 5px 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+div.dialog dl dd textarea {
+	height: 125px;
+}
+
+div.dialog p.footer {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	letter-spacing: 50px;
+}
+
+div.dialog p.footer input, div.dialog p.footer button {
+	width: 100px;
+	box-sizing: border-box;
+}
+
+/** メンテナンスフォーム */
+dl.maintenanceform dt, dl.maintenanceform dd {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+dl.maintenanceform dt {
+	margin-bottom: 5px;
+}
+
+dl.maintenanceform dd {
+	margin-bottom: 10px;
+}
+
+dl.maintenanceform dd input {
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+dl.maintenanceform dd select {
+	padding: 5px 29px 5px 10px;
+	box-sizing: border-box;
+}
