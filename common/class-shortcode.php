@@ -35,8 +35,6 @@ class Shortcode {
 	public function changelogex( $attributes ) {
 		// 引数が属性名で指定されていない場合は順番に格納する
 		$defaults = array(
-				'class'      => 'changelogex',
-				'id'         => '',
 				'hide-title' => 0,
 				'rows'       => 0,
 		);
@@ -141,7 +139,7 @@ class Shortcode {
 	public function enqueue_scripts() {
 		// 投稿にショートコードが含まれていない場合は何もしない
 		$post= get_post();
-		if ( empty( $post ) || ! is_a( $post, 'WP_Post' ) || ! has_shortcode( $post->post_content, 'changelogex' ) ) {
+		if ( empty( $post ) || ! is_a( $post, 'WP_Post' ) || ! has_shortcode( $post->post_content, Constants::SHORTCODE_CHANGELOGEX ) ) {
 			return;
 		}
 		wp_enqueue_style( Constants::CSS_ID_CHANGELOG_EXTEND, sprintf( '%1$s/css/%2$s.css', Constants::PLUGIN_URL, Constants::PLUGIN_NAME ) );

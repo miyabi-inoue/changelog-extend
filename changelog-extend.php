@@ -3,7 +3,7 @@
  * Plugin Name: Changelog Extend
  * Plugin URI:
  * Description: 更新履歴の表示を行います。表示したい履歴の手動追加も可能です。
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: 雅
  * Author URI: https://www.program-laboratory.com/
  * Text Domain: changelog-extend
@@ -36,5 +36,5 @@ register_deactivation_hook( __FILE__, __NAMESPACE__ . '\Plugin_Register::deactiv
 // 初期化する
 add_action( 'init', __NAMESPACE__ . '\Changelog_Extend::init' );
 add_action( 'init', __NAMESPACE__ . '\Shortcode::init' );
-add_action( 'init', __NAMESPACE__  . '\Admin::init' );
+add_action( 'init', __NAMESPACE__ . '\Admin::init' );
 ?>
